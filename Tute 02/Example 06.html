@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Options List</title>
+  <style>
+    /* CSS to add letters as labels */
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li:before {
+      content: attr(data-letter) ". ";
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li data-letter="C">Tea</li>
+    <li data-letter="B">Milk</li>
+    <li data-letter="A">Coffee</li>
+  </ul>
+</body>
+</html>
