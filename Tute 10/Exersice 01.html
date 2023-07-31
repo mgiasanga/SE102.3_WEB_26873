@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Operations</title>
+</head>
+<body>
+
+<script>
+   
+    function addition() {
+        let num1 = parseFloat(prompt("Enter the first number:"));
+        let num2 = parseFloat(prompt("Enter the second number:"));
+        if (!isNaN(num1) && !isNaN(num2)) {
+            alert(`Addition: ${num1 + num2}`);
+        } else {
+            alert("Invalid input. Please enter valid numbers.");
+        }
+    }
+
+    
+    function subtraction() {
+        let num1 = parseFloat(prompt("Enter the first number:"));
+        let num2 = parseFloat(prompt("Enter the second number:"));
+        if (!isNaN(num1) && !isNaN(num2)) {
+            alert(`Subtraction: ${num1 - num2}`);
+        } else {
+            alert("Invalid input. Please enter valid numbers.");
+        }
+    }
+
+    
+    function division() {
+        let num1 = parseFloat(prompt("Enter the dividend:"));
+        let num2 = parseFloat(prompt("Enter the divisor:"));
+        if (!isNaN(num1) && !isNaN(num2)) {
+            if (num2 !== 0) {
+                alert(`Division: ${num1 / num2}`);
+            } else {
+                alert("Cannot divide by zero. Please enter a non-zero divisor.");
+            }
+        } else {
+            alert("Invalid input. Please enter valid numbers.");
+        }
+    }
+
+    
+    function multiplication() {
+        let num1 = parseFloat(prompt("Enter the first number:"));
+        let num2 = parseFloat(prompt("Enter the second number:"));
+        if (!isNaN(num1) && !isNaN(num2)) {
+            alert(`Multiplication: ${num1 * num2}`);
+        } else {
+            alert("Invalid input. Please enter valid numbers.");
+        }
+    }
+</script>
+
+<h2>Math Operations</h2>
+<button onclick="addition()">Addition</button>
+<button onclick="subtraction()">Subtraction</button>
+<button onclick="division()">Division</button>
+<button onclick="multiplication()">Multiplication</button>
+
+</body>
+</html>
